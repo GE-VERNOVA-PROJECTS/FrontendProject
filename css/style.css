@@ -433,3 +433,34 @@ h2 {
         height: 80px;
     }
 }
+
+html, body {
+    height: 100%;
+}
+
+/* Page layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar stays on top */
+.main-nav {
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+}
+
+/* Footer stays at bottom */
+.site-footer {
+    position: sticky;
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+/* Middle content scrolls */
+.page-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
